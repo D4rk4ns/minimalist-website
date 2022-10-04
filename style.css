@@ -12,6 +12,7 @@ html,body{
 body{
     font-family: "Poppins", sans-serif;
     overflow-x: hidden;
+    background: rgba(184, 181, 181, 0.788);
 }
 
 :root{
@@ -47,11 +48,12 @@ nav{
 
 nav svg{
     cursor: pointer;
+    z-index: 10;
 }
 
 .links{
     position: absolute;
-    background: white;
+    background: rgba(0, 0, 0, 0.575);
     width: 100%;
     height: 100vh;
     left: 0;
@@ -64,7 +66,7 @@ nav svg{
 }
 
 .links a{
-    color: var(--secondary-color);
+    color: white;
     font-size: 2rem;
 }
 
@@ -120,6 +122,11 @@ nav svg{
     background-color: var(--main-color);
     color: var(--secondary-color);
 
+}
+
+.cta-main a{
+    text-decoration: none;
+    color: var(--secondary-color);
 }
 
 .cta-sec{
@@ -183,4 +190,28 @@ nav svg{
 .about img{
     width: 100%;
     margin-top: 2rem;
+}
+
+/*Sizing the media*/
+
+@media screen and (min-width: 768px){
+
+    .videos{
+        display: flex;
+        gap: 2rem;
+    }
+
+    .about{
+        display: flex;
+        gap: 5rem;
+        justify-content: space-between;
+    }
+
+    .about img{
+        width: 50%;
+    }
+
+    .about h2{
+        text-align: start;
+    }
 }
