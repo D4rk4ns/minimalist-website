@@ -4,7 +4,7 @@ burger.addEventListener('click', () => {
 
     if(burger.classList.contains('active')){
         gsap.to('.links', {x:'100%'});
-        gsap.to(".line",{stroke: "black"});
+        gsap.to(".line",{stroke: "white"});
         gsap.set('body', {overflow: 'auto'});
         gsap.set('body', {overflowX: 'hidden'});
     }
@@ -19,6 +19,7 @@ burger.addEventListener('click', () => {
 
     burger.classList.toggle('active');
 });
+
 
 const videos = gsap.utils.toArray('.video');
 gsap.set(videos, {opacity: 0});
